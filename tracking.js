@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Check for links
         if (tagName === 'a') {
-            // Check if it's the CV download link
-            if (element.classList.contains('cv-button')) {
-                return 'CV download';
-            }
+     // Check if it's the CV download link
+if (element.href.includes('cv.pdf') || element.href.includes('R_TEMPUL_PRASAD_CV.PDF') || element.classList.contains('cv-button')) {
+    return 'CV download';
+}
             return 'link';
         }
         
